@@ -1,0 +1,585 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>CASIO</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class='bx bxs-watch nav__logo-icon'></i> Casio
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Категории</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Продукция</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-menu-alt-left'></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">Корзинка</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/GWG-2000-1A5ER.jpg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Casio G-SHOCK GWG-2000</h3>
+                        <span class="cart__price">$1050</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/PRW-7000V-1D.jpg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Casio Pro Trek PRW-7000V-1D</h3>
+                        <span class="cart__price">$850</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/DB-36-9A.jpg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Casio Collection DB-36-9A</h3>
+                        <span class="cart__price">$980</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">$2880</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="assets/img/GST-B400D-1AER 1.png" alt="" class="home__img">
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="" target="" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="" target="" class="home__social-link">
+                            Telegramm
+                        </a>
+                        <a href="" target="" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">НОВАЯ КОЛЛЕКЦИЯ <br> ЛИНЕЙКИ G-SHOCK</h1>
+                        <p class="home__description">
+                            Японские наручные часы Casio G-SHOCK GST-B400D-1AER с хронографом. Эта новинка от Casio порадует вам своей функциональностью и надежностью. Часы для настоящих мужчин. G-Steel.
+                        </p>
+                        <span class="home__price">$1245</span>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                Узнать более
+                            </a>
+
+                            <button class="button home__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    Категории
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Новинка</span>
+
+                        <img src="assets/img/GA-900SKE-8AER.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">GA-900SKE-8AER</h3>
+                            <span class="featured__price">$1050</span>
+                        </div>
+
+                        <button class="button featured__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">На заказ</span>
+
+                        <img src="assets/img/GA-900-4AER.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">GA-900-4AER</h3>
+                            <span class="featured__price">$250</span>
+                        </div>
+
+                        <button class="button featured__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="assets/img/EFV-600D-2AVUEF.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">EFV-600D-2AVUEF</h3>
+                            <span class="featured__price">$890</span>
+                        </div>
+
+                        <button class="button featured__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            История Casio
+                        </h2>
+    
+                        <h1 class="story__title">
+                            Casio Кáсио – <br> самый популярный в мире часовой бренд.
+                        </h1>
+    
+                        <p class="story__description">
+                            Электронные или аналоговые, профессиональные или классические – широкий модельный ряд Casio позволяет судить о знакомой с детства марке не только как о часах для спорта!
+                        </p>
+    
+                        <a href="#" class="button button--small">Узнать более</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/casio_a100_1.jpg" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    ПРОДУКТЫ
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/DB-36-9A.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">DB-36-9A</h3>
+                        <span class="products__price">$1500</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/MTP-1302PD-1A1.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">EFV-600D-2AVUEF</h3>
+                        <span class="products__price">$1350</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/GA-100-1A1.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">GA-100-1A1</h3>
+                        <span class="products__price">$870</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/GST-B400D-1AER 1.png" alt="" class="products__img">
+
+                        <h3 class="products__title">GST-B400D-1AER</h3>
+                        <span class="products__price">$650</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/GST-B100GB-1A9.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">GST-B100GB-1A9</h3>
+                        <span class="products__price">$950</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Купил себе часы Casio и очень доволен покупкой. У меня они уже 1 год и всё работает без нареканий. ни разу не остановились или показали не првильно! Всегда верно! Комплектация красивая все удобно сложено Все что необходимо, на высоте, гармоничность цвета и узоры выглидят прекрасно. Механизм сделан из качественных материалов, не царапается циферблат.
+                                </p>
+                                <h3 class="testimonial__date">Март 20. 2022</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Байыш Таабалдиев</span>
+                                        <span class="testimonial__perfil-detail">Директор диджитал агентсва</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Циферблат четкий хорошо видно стрелки, да же в темноте так как они светятся.
+Ремешок металлический, не остовляет не какого запаха), вес очень легкий все зделанно из легкого и прочного метала. Удобно носить, рука не потеет.
+                                </p>
+                                <h3 class="testimonial__date">Июнь 23. 2020</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Даниэля</span>
+                                        <span class="testimonial__perfil-detail">Веб дизайнер</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Ремешок можно отрегулировать под ваш размер руки. Так же хорошое качество, прочный стальной противо ударный корпус.
+                                    Цена полностью опрпвдана, за такое качество долговечность материалов. Всем удачи всем советую эти часы.
+                                </p>
+                                <h3 class="testimonial__date">Январь 7. 2019</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Рома Билолдин</span>
+                                        <span class="testimonial__perfil-detail">Сеньор фуллстек программист</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="assets/img/47a569d3fd8b9bd7f281f7a9dac72d13.jpg" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">
+                    Новые поступления
+                </h2>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/MTG-B1000CX-4A.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">MTG-B1000CX-4A</h3>
+                                    <span class="new__price">$980</span>
+                                </div>
+        
+                                <button class="button new__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/MTG-B2000D-1AER.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">MTG-B2000D-1AER</h3>
+                                    <span class="new__price">$1150</span>
+                                </div>
+        
+                                <button class="button new__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/PRW-7000V-1D.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">PRW-7000V-1D</h3>
+                                    <span class="new__price">$750</span>
+                                </div>
+        
+                                <button class="button new__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/GWG-2000-1A5ER.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">GWG-2000-1A5ER</h3>
+                                    <span class="new__price">$1590</span>
+                                </div>
+        
+                                <button class="button new__button">ДОБАВИТЬ В КОРЗИНУ</button>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">ПОДПИСАТЬСЯ НА <br> НОВОСТИ</h2>
+                        <p class="newsletter__description">
+                            Все права защищены. Информация на сайте не является публичной офертой. Статус наличия и цена изделий на сайте и в розничных салонах могут не совпадать. 
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="email" class="newsletter__input">
+                        <button class="button">
+                            Подписаться
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Наш адрес</h3>
+
+                    <ul class="footer__list">
+                        <li>712000 - Ош</li>
+                        <li>улица Ордо 187</li>
+                        <li>0312 5 45 33</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">О нас</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Центр тех-поддержки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Поддержка клиентов</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">О нашей компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Рецензии</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Продукция</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Бренды</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Аксессуары</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">F A Q</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Оплаты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Соц. сети</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; SSB-DEV.KG  Все права защищены</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
